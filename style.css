@@ -1,0 +1,448 @@
+:root{
+    --fondo-colorA: #0f0f0f;
+    --fondo-colorB: #252525;
+    --principal-color: #005403;
+    --textoS-color:rgb(52, 52, 52);
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 2%;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled{
+    background-color:#00000056;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.secciones{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    flex-wrap: wrap;
+    color: var(--principal-color);
+    align-items: center;
+}
+
+.secciones h3{
+    margin: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#logoheader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.apartado{
+    height: 100vh;
+}
+
+.introduccion{
+    background-color: var(--fondo-colorA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.introduccion h1{
+    color: var(--principal-color);
+    font-size: 4em;
+    font-family: 'Syne', sans-serif;;
+    margin: 0;
+}
+
+.textoSecundario{
+    color: var(--textoS-color);
+}
+
+.alineacion{
+    display: flex;
+}
+
+#verProyectos{
+    background-color: var(--principal-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+#contactame{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.seccionContenido {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.seccionNumero {
+    background-color: var(--principal-color);
+    color: white;
+    font-size: 0.85em;
+    letter-spacing: 2px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.seccionTitulo {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.textoGris {
+    color: #aaaaaa;
+    font-size: 1em;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.sobreMiTabla {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid #2e2e2e;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobreMiLabel {
+    color: var(--principal-color);
+    letter-spacing: 1px;
+}
+
+.sobreMiValor {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.sobreMiCard {
+    background-color: var(--fondo-colorB);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.sobreMiCardDots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.sobreMiCardDots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #444;
+    display: inline-block;
+}
+
+.seccionLista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tecnologiaCard {
+    background-color: var(--fondo-colorB);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    WIDTH: 300;
+    HEIGHT: 200;
+}
+
+.tecnologiaIcono {
+    color: var(--principal-color);
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.tecnologiaIcono svg {
+    stroke: var(--principal-color);
+}
+
+.tecnologiaNombre {
+    color: white;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.cardDesc {
+    color: #aaaaaa;
+    font-size: 0.9em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.tecnologiaBarra {
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+
+.tecnologiaProgreso {
+    height: 100%;
+    background: linear-gradient(to right, var(--principal-color), #00aaff);
+    border-radius: 2px;
+}
+
+
+.proyectoCard {
+    background-color: var(--fondo-colorA);
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.proyectoTag {
+    background-color: #1a1a1a;
+    color: var(--principal-color);
+    font-size: 0.75em;
+    letter-spacing: 1px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--principal-color);
+    width: fit-content;
+}
+
+.proyectoNombre {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.3;
+}
+
+
+
+.proyectoTecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.proyectoTecTag {
+    background-color: #1e1e1e;
+    color: #cccccc;
+    font-size: 0.78em;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    font-family: monospace;
+}
+
+.proyectoLink {
+    color: var(--principal-color);
+    font-size: 0.95em;
+    font-weight: bold;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.proyectoLink:hover {
+    text-decoration: underline;
+}
+
+.contactoTitulo {
+    color: white;
+    font-size: 3.5em;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+}
+
+
+.contactoLista {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    max-width: 280px;
+}
+
+.contactoBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--fondo-colorB);
+    color: white;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contactoBtn:hover {
+    background-color: var(--principal-color);
+    color: white;
+}
+
+.contactoBtn svg {
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: var(--fondo-colorB);
+    color: #666666;
+    text-align: center;
+    padding: 24px 20px;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+/* ── TABLET (768px+) ── */
+@media (min-width: 768px) {
+    #logoheader {
+        width: 80px;
+        height: 80px;
+    }
+
+    .introduccion{
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .seccionContenido {
+        max-width: 720px;
+    }
+
+    .seccionTitulo {
+        font-size: 3em;
+    }
+
+    .introduccion h1 {
+        font-size: 5em;
+    }
+
+    #tecnologias .seccionLista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
+    #proyectos .seccionLista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+
+    .contactoLista {
+        flex-direction: row;
+        max-width: 500px;
+        justify-content: center;
+    }
+}
+
+/* ── DESKTOP (1024px+) ── */
+@media (min-width: 1024px) {
+    .seccionContenido {
+        max-width: 1100px;
+    }
+
+    .introduccion{
+        justify-content: space-between;
+        padding: 5%;
+    }
+
+    .seccionTitulo {
+        font-size: 3.5em;
+    }
+
+    .introduccion h1 {
+        font-size: 6em;
+    }
+
+    .contactoTitulo {
+        font-size: 5em;
+    }
+
+    #sobreMi .seccionContenido {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    #sobreMi .seccionContenido > h2,
+    #sobreMi .seccionContenido > p,
+    #sobreMi .seccionContenido > span {
+        flex: 1;
+    }
+
+    #sobreMi .sobreMiTabla,
+    #sobreMi .sobreMiCard {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    #tecnologias .seccionLista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #proyectos .seccionLista {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .seccion {
+        padding: 80px 60px;
+    }
+}

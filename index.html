@@ -1,0 +1,275 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <title>Portafolio - Santiago BUhler</title>
+    </head>
+    <body>
+        <header>
+            <img src="Logo.png" id="logoheader" alt="">
+            <div class="secciones">
+                <a href="#sobreMi"><h3>Sobre mi</h3></a>
+                <a href="#tecnologias"><h3>Tegnologias</h3></a>
+                <a href="#proyectos"><h3>Proyectos</h3></a>
+                <a href="#contacto"><h3>Contacto</h3></a>
+            </div>
+        </header>
+        <main>
+            <div class="apartado introduccion">
+                <div class="alineacion" style="flex-direction: column;">
+                    <h4 class="textoSecundario">Hola soy</h4>
+                    <h1>Santiago</h1>
+                    <h1 style="color: white;">Buhler</h1>
+                    <h3 class="textoSecundario">Técnico en Computación</h3>
+                    <h4 class="textoSecundario">Estudiante @Instituto Politécnico Modelo</h4>
+                    <div class="alineacion" style="flex-direction: row; justify-content: space-between;">
+                        <button id="verProyectos">
+                                <a href="">Ver proyectos</a>
+                        </button>
+                        <button id="contactame">
+                                <a href="">Contatame</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="sobreMi" class="apartado seccion" style="background-color: rgb(47, 47, 47);">
+                <div class="seccionContenido">
+                    <div>
+                        <span class="seccionNumero">SOBRE MÍ</span>
+
+                        <h2 class="seccionTitulo">
+                            Construyendo el futuro,<br>
+                            <span  style="color: var(--principal-color);">un commit a la vez.</span>
+                        </h2>
+
+                        <p class="textoGris">
+                            Soy Santiago Buhler, estudiante de Técnico en Computación en el Instituto Politécnico Modelo. Me apasiona el desarrollo web, la tecnología y la resolución de problemas a través del código.
+                        </p>
+                        <p class="textoGris">
+                            Actualmente en formación, busco aplicar y expandir mis conocimientos en proyectos reales que generen impacto.
+                        </p>
+                        <div class="sobreMiTabla">
+                        <div class="fila">
+                            <span sty="sobreMiLabel">INSTITUCIÓN</span>
+                            <span class="sobreMiValor">Instituto Politécnico Modelo</span>
+                        </div>
+                        <div class="fila">
+                            <span class="sobreMiLabel">CARRERA</span>
+                            <span class="sobreMiValor">Técnico en Computación</span>
+                        </div>
+                        <div class="fila">
+                            <span class="sobreMiLabel">ESTADO</span>
+                            <span class="sobreMiValor">Estudiante activo</span>
+                        </div>
+                    </div>
+                    </div>  
+                    <div class="sobreMiCard">
+                        <div class="sobreMiCardDots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="fila" style="font-size: 0.9em;">
+                            <span class="sobreMiLabel">nombre</span>
+                            <span class="sobreMiValor">Santiago Buhler</span>
+                        </div>
+                        <div class="fila" style="font-size: 0.9em;">
+                            <span class="sobreMiLabel">rol</span>
+                            <span class="sobreMiValor">Técnico en Comp.</span>
+                        </div>
+                        <div class="fila" style="font-size: 0.9em;">
+                            <span class="sobreMiLabel">estado</span>
+                            <span class="sobreMiValor">● disponible</span>
+                        </div>
+                        <div class="fila" style="font-size: 0.9em;">
+                            <span class="sobreMiLabel">institución</span>
+                            <span class="sobreMiValor">IPM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tecnologias" class="seccion" style="background-color: var(--fondo-colorA);">
+                <div class="seccionContenido">
+                    <span class="seccionNumero"> Tecnologias</span>
+
+                    <h2 class="seccionTitulo">
+                        Mi stack<br>
+                        <span style="color: var(--principal-color);">tecnológico.</span>
+                    </h2>
+
+                    <div class="seccionLista" style="align-items: center;">
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">&#60; &#62;</div>
+                            <h3 class="tecnologiaNombre">Desarrollo Front-End</h3>
+                            <p class="cardDesc">HTML5, CSS3 y JavaScript. Flexbox, Grid, diseño responsive y manipulación del DOM.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">{ }</div>
+                            <h3 class="tecnologiaNombre">Desarrollo Back-End</h3>
+                            <p class="cardDesc">Desarrollo de lógica de servidor en Java, Python, C++ y C#.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/>
+                                </svg>
+                            </div>
+                            <h3 class="tecnologiaNombre">React</h3>
+                            <p class="cardDesc">Componentes reutilizables, hooks y gestión de estado en aplicaciones SPA.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3 class="tecnologiaNombre">Spring Boot</h3>
+                            <p class="cardDesc">Creación de APIs REST con Java y Spring Boot, manejo de dependencias con Gradlew.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/>
+                                </svg>
+                            </div>
+                            <h3 class="tecnologiaNombre">Git</h3>
+                            <p class="cardDesc">Control de versiones, manejo de ramas, commits y colaboración en GitHub.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="tecnologiaCard">
+                            <div class="tecnologiaIcono">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/>
+                                </svg>
+                            </div>
+                            <h3 class="tecnologiaNombre">Protocolos de Redes</h3>
+                            <p class="cardDesc">Comprensión y manejo de protocolos TCP/IP, HTTP, DNS, DHCP y modelo OSI.</p>
+                            <div class="tecnologiaBarra">
+                                <div class="tecnologiaProgreso" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="proyectos" class="seccion" style="background-color: var(--fondo-colorB);">
+                <div class="seccionContenido">
+                    <span class="seccionNumero">PROYECTOS</span>
+
+                    <h2 class="seccionTitulo">
+                        Lo que estoy<br>
+                        <span style="color: var(--principal-color);">construyendo.</span>
+                    </h2>
+
+                    <div class="seccionLista">
+                        <div class="proyectoCard">
+                            <span class="proyectoTag">Destacado</span>
+                            <h3 class="proyectoNombre">Portafolio Personal</h3>
+                            <p class="cardDesc">Diseño y desarrollo de mi portafolio web personal con HTML semántica, CSS custom properties y JavaScript vanilla. Mobile first y responsive design.</p>
+                            <div class="proyectoTecnologias">
+                                <span class="proyectoTecTag">HTML5</span>
+                                <span class="proyectoTecTag">CSS3</span>
+                                <span class="proyectoTecTag">JavaScript</span>
+                            </div>
+                            <a href="https://github.com/bula393/Portafolio" class="proyectoLink">Ver proyecto →</a>
+                        </div>
+
+                        <div class="proyectoCard">
+                            <span class="proyectoTag">Académico</span>
+                            <h3 class="proyectoNombre">Trabajo Práctico — Redes</h3>
+                            <p class="cardDesc">Configuración y simulación de redes LAN con dispositivos virtuales, aplicando conceptos de subredes y protocolos de comunicación.</p>
+                            <div class="proyectoTecnologias">
+                                <span class="proyectoTecTag">Cisco Packet Tracer</span>
+                                <span class="proyectoTecTag">TCP/IP</span>
+                            </div>
+                            <a href="https://github.com/bula393/TP-Redes-buhler" class="proyectoLink">Ver proyecto →</a>
+                        </div>
+
+                        <div class="proyectoCard">
+                            <span class="proyectoTag">Académico</span>
+                            <h3 class="proyectoNombre">Pagina de cine</h3>
+                            <p class="cardDesc">Pagina web para venta de entradas de un cine con una api rest en springboot y una base de datos sql.</p>
+                            <div class="proyectoTecnologias">
+                                <span class="proyectoTecTag">Springboot</span>
+                                <span class="proyectoTecTag">Api rest</span>
+                            </div>
+                            <a href="https://github.com/bula393/TpIntegrador-PoliMark" class="proyectoLink">Ver proyecto →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacto" class="seccion" style="background-color: var(--fondo-colorA);">
+                <div class="seccionContenido" style="align-items: center; text-align: center;">
+                    <span class="seccionNumero" style="align-self: flex-start;">CONTACTO</span>
+
+                    <h2 class="contactoTitulo">¿Hablamos?</h2>
+
+                    <p class="textoGris" style="font-size: 0.95em;">
+                        Estoy abierto a oportunidades,<br>
+                        colaboraciones o simplemente charlar sobre<br>
+                        tecnología.
+                    </p>
+
+                    <div class="contactoLista">
+                        <a href="" target="_blank" class="contactoBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/bula393" target="_blank" class="contactoBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+
+                        <a href="mailto:buhlersantiago@gmail.com" class="contactoBtn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Santiago Buhler &copy; 2026 &mdash; Diseñado y desarrollado por Santiago Buhler</p>
+        </footer>
+    </body>
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</html>
